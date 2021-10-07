@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    font-weight: 500;
+    font-size: 16px;
+    background: linear-gradient(to right top, rgba(238, 238, 238, 0.925), rgb(48, 62, 143));
+    height: 100vh;
+    
+}
+
+.box-container{
+    text-align: center;
+}
+.weather-header{
+    margin-top: 20px;
+}
+.header-text{
+    color: #eee;
+    letter-spacing: 2px;
+    font-weight:600;
+}
+
+.input{
+    width: 300px;
+    height: 50px;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.input:focus{
+    outline: none;
+}
+.img-box{
+    text-align: center;
+}
+.main-img{
+    width: 170px;
+}
+#icon{
+    background-color: #FFA500;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    transition: all .5s ease;
+}
+
+#icon:hover{
+    background-color: #e2970b;
+}
+.err-msg{
+    display: block;
+    color: #fff;
+    margin: 10px 0;
+}
+.city{
+    display: inline-block;
+    color: #fff;
+    font-size: 26px;
+    margin: 10px 10px;
+    background-color: rgb(48, 62, 143);
+    padding: 3px 20px;
+    border-radius: 5px;
+}
+.city-name{
+    display: inline-block;
+    color: #fff;
+    font-size: 26px;
+    background-color:#FFA500 ;
+    padding: 3px 20px;
+    border-radius: 5px;
+
+}
+
+.social-links i{
+    margin: 40px 5px;
+    background-color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+
+.social-links i:hover{
+    transform: translateY(-10px);
+}
+
+
+@media screen and (max-width: 736px) {
+    .header-text{
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .input{
+        width: 250px;
+        height: 45px;
+    }
+
+    #icon{
+        padding: 11px 24px;
+        font-size: 16px;
+    }
+
+    .city{
+        font-size: 17px;
+    }
+
+    .city-name{
+        font-size: 17px;
+    }
+
+    .social-links i{
+        font-size: 16px;
+
+    }
+  }
